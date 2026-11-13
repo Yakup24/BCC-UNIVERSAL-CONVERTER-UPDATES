@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "channel": "test",
+  "version": "1.0.1-rc3",
+  "minimumSupportedVersion": null,
+  "installerUrl": "https://github.com/Yakup24/BCC-UNIVERSAL-CONVERTER-UPDATES/releases/download/v1.0.1-rc3/BCC_Universal_Converter_Setup_v1.0.1-rc3.exe",
+  "sha256": "715CDF9B5D5C787C86401AAFA1B6860D476FAFFACC29D3AB611DA612A85E16B5",
+  "size": 402839796,
+  "releaseNotesUrl": "https://github.com/Yakup24/BCC-UNIVERSAL-CONVERTER-UPDATES/blob/main/release-notes/1.0.1-rc3.md",
+  "publishedAt": "2026-11-13T18:59:48Z",
+  "releaseNotes": "# BCC Universal Converter 1.0.1-rc3\r\n\r\nThis prerelease verifies the signed Test-channel update from 1.0.1-rc2 to 1.0.1-rc3.\r\nNo product features or update trust keys changed. Existing settings and user data are retained during installation.\r\n"
+}
