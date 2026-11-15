@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
   "channel": "test",
-  "version": "1.0.1-rc3",
+  "version": "1.0.1-rc4",
   "minimumSupportedVersion": null,
-  "installerUrl": "https://github.com/Yakup24/BCC-UNIVERSAL-CONVERTER-UPDATES/releases/download/v1.0.1-rc3/BCC_Universal_Converter_Setup_v1.0.1-rc3.exe",
-  "sha256": "715CDF9B5D5C787C86401AAFA1B6860D476FAFFACC29D3AB611DA612A85E16B5",
-  "size": 402839796,
-  "releaseNotesUrl": "https://github.com/Yakup24/BCC-UNIVERSAL-CONVERTER-UPDATES/blob/main/release-notes/1.0.1-rc3.md",
-  "publishedAt": "2026-11-13T18:59:48Z",
-  "releaseNotes": "# BCC Universal Converter 1.0.1-rc3\r\n\r\nThis prerelease verifies the signed Test-channel update from 1.0.1-rc2 to 1.0.1-rc3.\r\nNo product features or update trust keys changed. Existing settings and user data are retained during installation.\r\n"
+  "installerUrl": "https://github.com/Yakup24/BCC-UNIVERSAL-CONVERTER-UPDATES/releases/download/v1.0.1-rc4/BCC_Universal_Converter_Setup_v1.0.1-rc4.exe",
+  "sha256": "079C72372C80EBCC4A337DBE080F09B36722AAEF513D2146BA62E25E4CE79D26",
+  "size": 402822088,
+  "releaseNotesUrl": "https://github.com/Yakup24/BCC-UNIVERSAL-CONVERTER-UPDATES/blob/main/release-notes/1.0.1-rc4.md",
+  "publishedAt": "2026-11-15T09:07:22Z",
+  "releaseNotes": "# BCC Universal Converter 1.0.1-rc4\r\n\r\nUI hardening and bounded large-workload processing candidate. Workspace, notification and command palette transitions follow the Windows client-area animation preference. Narrow windows gain adaptive home cards, wrapping update actions, stacked PDF, OCR and Print panels, and adaptive Scan settings. Recent history and the Convert file list have bounded scroll areas; the Convert queue now virtualizes visible rows.\r\n\r\nOCR processes pages one at a time, writes text incrementally, checks temporary and output disk space, and applies a bounded timeout to each page plus a job watchdog. The hard cap is 250 pages; 100 scanned pages and 250 digital pages have been exercised. The ordinary conversion queue uses backpressure. The image engine decodes frames individually for separate outputs and limits multi-page TIFF memory. Resource failures have specific English and Turkish messages.\r\n\r\nThe output root remains under the user's control. Word-to-PDF, PDF-to-Word, images-to-WebP, OCR and PDF optimization results use operation folders; collisions receive distinct names without replacing an existing result. If the selected root becomes unavailable, the application reports the condition and does not silently write to a different folder. Batch work remains cancellable, and temporary work owned by a failed or cancelled job is cleaned up.\r\n\r\nResource guards remain in place. PDF input size, page raster dimensions, OCR text output, image frame size, multi-frame TIFF decoded pixels and conversion concurrency have explicit bounds. A document beyond a hard resource bound receives a specific error where available; the application does not claim unlimited processing. The scanner and printer still depend on physical device acceptance outside this release run. The full physical display scale matrix and mixed-scale multi-monitor setup remain outside the available local hardware.\r\n\r\nThe signed update trust root is unchanged. Physical high-DPI and multi-monitor combinations outside the available test machine remain unverified.\r\n"
 }
